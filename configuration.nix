@@ -34,6 +34,16 @@
   networking.hostName = "nixos-btw";
 
   networking.networkmanager.enable = true;
+  
+  services.create_ap = {
+    enable = true;
+    settings = {
+      INTERNET_IFACE = "enp6s0";
+      WIFI_IFACE = "wlp0s20f3";
+      SSID = "i use nixos btw";
+      PASSPHRASE = "j@np@wel2";
+    };
+  };
 
   time.timeZone = "Europe/Warsaw";
 
