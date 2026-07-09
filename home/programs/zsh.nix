@@ -9,6 +9,8 @@
 
     enableCompletion = true;
 
+    initContent = "fastfetch";
+
     oh-my-zsh = {
       enable = true;
       theme = "";
