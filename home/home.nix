@@ -20,9 +20,6 @@
   home.packages = with pkgs; [
     ghostty
 
-    mako
-    swaylock
-    swayidle
     wl-clipboard
     grim
     slurp
