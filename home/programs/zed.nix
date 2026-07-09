@@ -40,6 +40,7 @@
         mode = "dark";
         light = "macOS Classic Light";
         dark = "macOS Classic Dark";
+      };
     };
   };
 }
