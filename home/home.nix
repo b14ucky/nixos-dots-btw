@@ -28,6 +28,14 @@
     slurp
 
     spotify
+
+    (writeShellScriptBin "pbcopy" ''
+      exec ${wl-clipboard}/bin/wl-copy "$@"
+    '')
+
+    (writeShellScriptBin "pbpaste" ''
+      exec ${wl-clipboard}/bin/wl-paste "$@"
+    '')
   ];
 
   programs.zen-browser = {
