@@ -143,6 +143,7 @@
     vim-full
     wget
     os-prober
+    xwayland-satellite
   ];
 
   nix.settings = {
