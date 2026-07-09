@@ -35,7 +35,7 @@
       ui_font_size = 16;
       buffer_font_size = 18;
 
-      icon_themes = {
+      icon_theme = {
         mode = "dark";
         light = "Zed (Default)";
         dark = "Zed (Default)";
