@@ -23,6 +23,8 @@
     wl-clipboard
     grim
     slurp
+    brightnessctl
+    playerctl
 
     spotify
 
