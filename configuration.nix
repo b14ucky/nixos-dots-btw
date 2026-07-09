@@ -68,6 +68,19 @@
 
   hardware.graphics.enable = true;
 
+  hardware.bluetooth = {
+    enable = true;
+
+    powerOnBoot = true;
+    settings = {
+      General = {
+        Experimental = true;
+      };
+    };
+  };
+
+  services.blueman.enable = true;
+
   security.rtkit.enable = true;
 
   services.pipewire = {
@@ -77,6 +90,17 @@
     alsa.support32Bit = true;
 
     pulse.enable = true;
+
+    wireplumber.enable = true;
+
+    extraConfig.pipewire."92-bluetooth" = {
+      "context.properties" = {
+        "bluez5.enable-msbc" = true;
+        "bluez5.enable-sbc-xq" = true;
+        "bluez5.enable-hw-volume" = true;
+        "bluez5.codecs" = [ "sbc" "sbc_xq" "aac" "ldac" "aptx" "aptx_hd" ];
+      };
+    };
   };
 
   security.polkit.enable = true;
@@ -93,6 +117,7 @@
       "networkmanager"
       "video"
       "audio"
+      "bluetooth"
     ];
   };
 
