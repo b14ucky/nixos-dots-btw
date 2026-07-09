@@ -127,6 +127,8 @@
     extra-trusted-public-keys = [ "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4=" ];
   };
 
+  programs.nix-ld.enable = true;
+
   nixpkgs.config.allowUnfree = true;
 
   # List services that you want to enable:

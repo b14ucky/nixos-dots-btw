@@ -10,6 +10,9 @@
     ./programs/zsh.nix
     ./programs/starship.nix
     ./programs/terminal-tools.nix
+    ./programs/zed.nix
+    ./programs/python.nix
+    ./programs/direnv.nix
   ];
 
   home.username = "dominik-btw";
