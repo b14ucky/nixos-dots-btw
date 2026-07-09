@@ -11,6 +11,8 @@
       cursor-style = "block";
       cursor-style-blink = "false";
 
+      font-family = "JetBrainsMono Nerd Font";
+
       shell-integration-features = "no-cursor";
     };
   };

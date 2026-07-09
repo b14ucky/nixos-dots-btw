@@ -98,6 +98,10 @@
 
   programs.git.enable = true;
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+  ];
+
   xdg.portal = {
     enable = true;
 
