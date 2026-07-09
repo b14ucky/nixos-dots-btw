@@ -16,6 +16,11 @@
 
       cli_default_open_behavior = "existing_window";
 
+      project_panel.dock = "left";
+      outline_panel.dock = "left";
+      collaboration_panel.dock = "left";
+      git_panel.dock = "left";
+
       languages = {
         Python = {
           language_servers = ["pyrefly" "ruff" "!basedpyright" ];
