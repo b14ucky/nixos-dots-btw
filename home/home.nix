@@ -13,6 +13,7 @@
     ./programs/zed.nix
     ./programs/python.nix
     ./programs/direnv.nix
+    ./programs/vim.nix
   ];
 
   home.username = "dominik-btw";
@@ -60,7 +61,7 @@
     enable = true;
   };
 
-  xdg.configFile."niri/config.kdl".source = ./config/niri/config.kdl;
+  xdg.configFile."niri/config.kdl".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos-dots/home/config/niri/config.kdl";
   
   home.stateVersion = "26.05";
 }

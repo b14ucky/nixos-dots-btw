@@ -9,4 +9,5 @@
   programs.fastfetch.enable = true;
   programs.fzf.enable = true;
   programs.eza.enable = true;
+  programs.ripgrep.enable = true;
 }
