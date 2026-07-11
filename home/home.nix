@@ -61,7 +61,10 @@
     enable = true;
   };
 
-  xdg.configFile."niri/config.kdl".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos-dots/home/config/niri/config.kdl";
+  xdg.configFile."niri/config.kdl".source = ./config/niri/config.kdl;
+  # For hot-reload during niri configuration - out of store symlink has to be made.
+  # To do so - ucomment the line below and comment the line above.
+  # xdg.configFile."niri/config.kdl".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/nixos-dots/home/config/niri/config.kdl";
   
   home.stateVersion = "26.05";
 }
