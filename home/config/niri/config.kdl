@@ -47,9 +47,9 @@ prefer-no-csd
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
-workspace "zed" {}
-workspace "spotify" {}
 workspace "zen" {}
+workspace "spotify" {}
+workspace "zed" {}
 
 window-rule {
     match app-id=r#"zen-twilight$"#
@@ -58,13 +58,13 @@ window-rule {
 }
 
 window-rule {
-    match app-id=r#"spotify$"#
+    match app-id=r#"Spotify$"#
     open-on-workspace "spotify"
     open-maximized-to-edges true
 }
 
 window-rule {
-    match at-startup=true app-id=r#"spotify$"#
+    match at-startup=true app-id=r#"Spotify$"#
     open-on-workspace "spotify"
     open-maximized-to-edges true
 }
