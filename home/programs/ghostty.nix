@@ -10,8 +10,10 @@
 
       cursor-style = "block";
       cursor-style-blink = "false";
+      theme = "TokyoNight Night";
 
       font-family = "JetBrainsMono Nerd Font";
+      font-feature = [ "-calt" "-liga" "-dlig" ];
 
       shell-integration-features = "no-cursor";
     };
