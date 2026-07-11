@@ -27,6 +27,7 @@
     grim
     slurp
     brightnessctl
+    ddcutil
     playerctl
 
     spotify
@@ -39,6 +40,15 @@
     (writeShellScriptBin "pbpaste" ''
       exec ${wl-clipboard}/bin/wl-paste "$@"
     '')
+
+    (pkgs.writeShellApplication {
+      name = "ns";
+      runtimeInputs = with pkgs; [
+        fzf
+        nix-search-tv
+      ];
+      text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
+    })
   ];
 
   programs.zen-browser = {
