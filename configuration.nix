@@ -66,6 +66,11 @@
     };
   };
 
+  services.logind.settings.Login = {
+    HandleLidSwitchDocked = "ignore";
+    HandleLidSwitchExternalPower = "ignore";
+  };
+
   hardware.graphics.enable = true;
 
   hardware.bluetooth = {
