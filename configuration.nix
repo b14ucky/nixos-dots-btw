@@ -52,7 +52,7 @@
   services.xserver.enable = false;
 
   # services.xserver.xkb.layout = "us";
-  services.xserver.xkb.options = "caps:escape";
+  services.xserver.xkb.options = "caps:swapescape";
 
   programs.niri.enable = true;
 
