@@ -14,6 +14,7 @@
     ./programs/python.nix
     ./programs/direnv.nix
     ./programs/vim.nix
+    ./programs/noctalia.nix
   ];
 
   home.username = "dominik-btw";
@@ -55,10 +56,6 @@
   programs.zen-browser = {
     enable = true;
     setAsDefaultBrowser = true;
-  };
-
-  programs.noctalia = {
-    enable = true;
   };
 
   xdg.configFile."niri/config.kdl".source = ./config/niri/config.kdl;
