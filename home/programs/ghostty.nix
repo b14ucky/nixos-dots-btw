@@ -16,6 +16,10 @@
       font-feature = [ "-calt" "-liga" "-dlig" ];
 
       shell-integration-features = "no-cursor";
+
+      keybind = [
+        "ctrl+i=text:\\x09"
+      ];
     };
   };
 }
