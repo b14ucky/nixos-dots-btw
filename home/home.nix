@@ -20,10 +20,6 @@
 
   programs.home-manager.enable = true;
 
-  home.sessionVariables = {
-    NIXOS_OZONE_WL = "1";
-  };
-
   home.packages = with pkgs; [
     ghostty
 
@@ -34,7 +30,7 @@
     playerctl
 
     spotify
-    discord
+    vesktop
 
     (writeShellScriptBin "pbcopy" ''
       exec ${wl-clipboard}/bin/wl-copy "$@"

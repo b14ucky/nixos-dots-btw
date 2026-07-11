@@ -135,7 +135,7 @@
       xdg-desktop-portal-gtk
     ];
 
-    config.common.default = "*";
+    config.common.default = [ "gnome" "gtk" ];
   };
 
   environment.systemPackages = with pkgs; [
