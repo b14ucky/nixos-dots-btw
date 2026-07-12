@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 
 {
   programs.git = {
@@ -8,7 +8,7 @@
       user = {
         name = "Dominik Meisner";
         email = "meisnerd2003@gmail.com";
-        signingkey = "/home/dominik-btw/.ssh/id_ed25519.pub";
+        signingkey = "${config.home.homeDirectory}/.ssh/id_ed25519.pub";
       };
 
       gpg = {
@@ -24,7 +24,7 @@
       };
 
       gpg."ssh" = {
-        allowedSignersFile = "/home/dominik-btw/.config/git/allowed_signers";
+        allowedSignersFile = "${config.home.homeDirectory}/.config/git/allowed_signers";
       };
     };
   };
