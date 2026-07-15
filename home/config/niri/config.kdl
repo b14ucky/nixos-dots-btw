@@ -11,6 +11,10 @@ input {
     focus-follows-mouse 
 }
 
+output "DP-1" {
+    off
+}
+
 layout {
     gaps 1
 
