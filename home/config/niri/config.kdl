@@ -52,8 +52,8 @@ prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 workspace "zen" {}
-workspace "spotify" {}
 workspace "zed" {}
+workspace "spotify" {}
 
 window-rule {
     match app-id=r#"zen-twilight$"#
