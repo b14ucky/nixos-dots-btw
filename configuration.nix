@@ -61,6 +61,7 @@
   services.xserver.xkb.options = "caps:swapescape";
 
   programs.niri.enable = true;
+  programs.hyprland.enable = true;
 
   services.greetd = {
     enable = true;
