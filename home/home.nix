@@ -54,6 +54,15 @@
     })
   ];
 
+  home.pointerCursor = {
+    gtk.enable = true;
+    x11.enable = true;
+
+    package = pkgs.apple-cursor;
+    name = "macOS";
+    size = 24;
+  };
+
   programs.zen-browser = {
     enable = true;
     setAsDefaultBrowser = true;
