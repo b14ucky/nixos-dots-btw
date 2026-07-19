@@ -25,6 +25,7 @@
 
   home.packages = with pkgs; [
     ghostty
+    nautilus
 
     wl-clipboard
     grim
