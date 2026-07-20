@@ -6,6 +6,7 @@ input {
     }
     touchpad {
         tap
+        natural-scroll false
     }
     warp-mouse-to-focus
     focus-follows-mouse 
