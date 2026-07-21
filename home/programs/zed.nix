@@ -7,6 +7,10 @@
     extensions = [
       "pyrefly"
       "macos-classic"
+      "toml"
+      "csharp"
+      "git-firefly"
+      "nix"
     ];
 
     userSettings = {
