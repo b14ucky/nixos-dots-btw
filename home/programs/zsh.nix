@@ -34,6 +34,8 @@
       "...." = "cd ../../..";
 
       cf = "clear && fastfetch";
+
+      zed = "zeditor";
     };
 
     history = {
