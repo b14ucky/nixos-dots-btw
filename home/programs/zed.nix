@@ -18,6 +18,8 @@
       vim_mode = true;
       disable_ai = true;
 
+      load_direnv = "shell_hook";
+
       cli_default_open_behavior = "existing_window";
 
       project_panel.dock = "left";
