@@ -159,6 +159,11 @@
     xwayland-satellite
   ];
 
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
+
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
 
