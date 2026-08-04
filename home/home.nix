@@ -37,6 +37,8 @@
     spotify
     vesktop
 
+    claude-code
+
     (writeShellScriptBin "pbcopy" ''
       exec ${wl-clipboard}/bin/wl-copy "$@"
     '')
