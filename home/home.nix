@@ -15,6 +15,7 @@
     ./programs/direnv.nix
     ./programs/vim.nix
     ./programs/noctalia.nix
+    ./programs/gh.nix
   ];
 
   home.username = "dominik-btw";
