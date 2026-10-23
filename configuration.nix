@@ -69,6 +69,7 @@
 
   programs.niri.enable = true;
   programs.hyprland.enable = true;
+  programs.steam.enable = true;
 
   services.greetd = {
     enable = true;
