@@ -48,6 +48,9 @@
       WIFI_IFACE = "wlp0s20f3";
       SSID = "i use nixos btw";
       PASSPHRASE = "j@np@wel2";
+
+      IEEE80211N = true;
+      IEEE80211AC = true;
     };
   };
 
