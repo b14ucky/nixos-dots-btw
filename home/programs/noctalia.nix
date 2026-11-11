@@ -47,6 +47,7 @@
           "volume"
           "brightness"
           "battery"
+          "keyboard-layout"
           "session"
         ];
       };

@@ -64,8 +64,10 @@
 
   services.xserver.enable = false;
 
-  # services.xserver.xkb.layout = "us";
-  services.xserver.xkb.options = "caps:swapescape";
+  services.xserver.xkb = { 
+    layout = "us,pl";
+    options = "caps:swapescape,grp:alt_shift_toggle";
+  };
 
   programs.niri.enable = true;
   programs.hyprland.enable = true;
