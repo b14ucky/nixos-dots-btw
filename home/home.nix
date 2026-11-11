@@ -16,6 +16,7 @@
     ./programs/vim.nix
     ./programs/noctalia.nix
     ./programs/gh.nix
+    ./programs/rust.nix
   ];
 
   home.username = "dominik-btw";
